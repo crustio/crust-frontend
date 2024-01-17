@@ -1,6 +1,6 @@
 <template>
     <div class="container px-3 service__area pt-12 pb-14">
-        <div class="flex flex-wrap -mx-3">
+        <div class="flex flex-wrap">
             <div class="w-full px-2">
                 <SectionTitle title="Dstorage for Every Use Case" />
             </div>

@@ -79,10 +79,9 @@ h4{
 @media(max-width:992px){
     .main-menu{
         position: absolute;
-        top: 100px;
+        top: 76px;
         right: 0;
         width: 100%;
-        padding: 10px 30px;
         background-color: #000; /* Set your desired background color */
         backdrop-filter: blur(10px);
         z-index: 9999;
@@ -367,9 +366,6 @@ figure.upor_tab_left_img img {
 .brand_area h2, .service__area h2{
     max-width: 693px;
     margin:0 auto;
-    margin-top: 18px;
-    line-height: 135%;
-    font-size: 48px;
 }
 
 .brand_area .section__title{
@@ -667,25 +663,34 @@ figure.upor_tab_left_img img {
             height: 100%;
         }
     }
-    .hero_area .btn_one{
-        font-size: 16px;
+    .hero_area {
+        .btn_one,
+        .btn_two,
+        .btn_three {
+            font-size: 16px;
+            padding: 16px;
+        }
     }
-    .hero_area .btn_two{
-        font-size: 16px;
-    }
-    .featured__area h4{
-        br{
-            display: none;
+    .featured__area {
+        height: auto;
+        padding-top: 0;
+
+        h4{
+            br{
+                display: none;
+            }
         }
     }
 }
 
 @media(max-width:410px){
 
-    .hero_area .btn_one{
-        font-size: 15px;
-    }
-    .hero_area .btn_two{
-        font-size: 15px;
+    .hero_area {
+        .btn_one,
+        .btn_two,
+        .btn_three {
+            font-size: 15px;
+            padding: 16px;
+        }
     }
 }

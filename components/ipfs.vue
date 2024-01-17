@@ -1,6 +1,6 @@
 <template>
     <div class="container px-3 ipfs__area pt-12">
-        <div class="flex flex-wrap items-center -mx-3">
+        <div class="flex flex-wrap items-center">
             <div class="w-full px-3">
                 <SectionTitle title="IPFS Done the Right Way" subtitle="Elevating your IPFS experience, Crust Network serves as incentivized service layer, safeguarding your data with accessibility, replication, and long-term guarantees." />
             </div>
