@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t,a as s}from"./entry.xoa-qKh0.js";const c={},n=s("h1",null,"Lorem ipsum dolor sit amet.",-1),r=[n];function a(_,d){return t(),o("div",null,r)}const l=e(c,[["render",a]]);export{l as default};
