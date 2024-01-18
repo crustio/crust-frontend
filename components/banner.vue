@@ -84,21 +84,37 @@ export default {
         const token = `${username}:${password}`
         const encodedToken = btoa(token)
         useFetch(`${domain}totalStorage`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            let data = res?.data?.value?.data;
-            this.totalStorage = data || 0;
+            this.totalStorage = this.formatData(res);
         }).catch(err => console.log(err));
         useFetch(`${domain}totalValidNodes`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            let data = res?.data?.value ? JSON.parse(res.data.value)?.data : 0;
-            this.totalValidNodes = data || 0;
+            this.totalValidNodes = this.formatData(res);
         }).catch(err => console.log(err));
         useFetch(`${domain}orderCount`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            let data = res?.data?.value?.data;
-            this.orderCount = data || 0;
+            this.orderCount = this.formatData(res);
         }).catch(err => console.log(err));
         useFetch(`${domain}filePrice`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            let data = res?.data?.value?.data;
-            this.filePrice = data || 0;
+            this.filePrice = this.formatData(res);
         }).catch(err => console.log(err));
+    },
+    methods: {
+        formatData(data) {
+            let res = data?.data?.value
+            if (res) {
+                if (Object.prototype.toString.call(res) === "[object Object]") {
+                    return res.data
+                } else if (Object.prototype.toString.call(res) === "[object String]") {
+                    try {
+                        let obj = JSON.parse(res)
+                        return obj.data
+                    } catch (error) {
+                        return 0
+                    }
+                } else {
+                    return res
+                }
+            }
+            return 0
+        }
     },
 };
 </script>
