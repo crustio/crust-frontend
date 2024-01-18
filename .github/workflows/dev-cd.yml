@@ -1,8 +1,6 @@
 name: dev-cd
 
 on:
-  push:
-    branches: [ main ]
 # manual trigger
   workflow_dispatch:
 
@@ -12,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-        with:
-          path: main
+        uses: actions/checkout@v2
 
       - name: Build and push docker
         run: |
