@@ -1,6 +1,6 @@
 <template>
     <div class="hero_area pt-[140px] md:pt-[215px] pb-[60px] md:pb-[125px] bg-cover bg-left-bottom reactive">
-        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover -z-0">
+        <video autoplay muted playsinline loop class="absolute inset-0 w-full h-full object-cover -z-0">
             <source src="/public/img/hero-orange-video.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-black opacity-50"></div>
