@@ -1,18 +1,20 @@
 <template>
   <div class="bg-black text-white h-full">
-    <Header />
-    <Banner />
-    <Featured />
-    <FeatureUpon />
-    <Brand />
-    <Ixeo />
-    <Service />
-    <Ipfs />
-    <!-- <Products /> -->
-    <ProductsTab />
-    <!-- newer -->
-    <Contact />
-    <Footer />
+    <ClientOnly>
+      <Header />
+      <Banner />
+      <Featured />
+      <FeatureUpon />
+      <Brand />
+      <Ixeo />
+      <Service />
+      <Ipfs />
+      <!-- <Products /> -->
+      <ProductsTab />
+      <!-- newer -->
+      <Contact />
+      <Footer />
+    </ClientOnly>
   </div>
 </template>
 
