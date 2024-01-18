@@ -31,7 +31,7 @@
       '/img/brand/polygon-logo.png',
       '/img/brand/MultiversX.png',
       '/img/brand/NEAR.png',
-      '/img/brand/Chainlink-logo.png',
+      '/img/brand/Chainlink-Logo.png',
       '/img/brand/Solana.png',
       '/img/brand/APTOS.png',
       '/img/brand/Arbitrum.png',
