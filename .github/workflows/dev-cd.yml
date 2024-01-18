@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: gavfu/crust-home:latest
+          tags: crustio/crust-home:latest
