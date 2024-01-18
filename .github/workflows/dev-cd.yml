@@ -1,7 +1,10 @@
 name: dev-cd
 
 on:
-# manual trigger
+  push:
+    branches:
+      - main
+  # manual trigger
   workflow_dispatch:
 
 jobs:
@@ -26,3 +29,11 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: crustio/crust-home:latest
+
+      - name: deploy crust home web
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          script: ${{ secrets.CMD }}
