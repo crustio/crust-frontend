@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: gavfu/crust-web:latest
+          tags: gavfu/crust-home:latest
