@@ -16,18 +16,6 @@ jobs:
         with:
           path: main
 
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '18'
-          always-auth: true
-          registry-url: https://registry.npmjs.org
-
-      - name: Install dependencies
-        run: yarn install --immutable
-
-      - name: Build bundle
-        run: yarn run generate
-
       - name: Build and push docker
         run: |
           docker build -t gavfu/crust-web:latest .
