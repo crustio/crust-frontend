@@ -7,7 +7,7 @@
             <img src="/img/logo.png" alt="" class="w-[99px] h-6" />
           </NuxtLink>
         </div>
-        <div class="w-9/12 lg:w-8/12 text-center">
+        <div class="w-9/12 text-center">
           <button class="menu_bar ml-auto block lg:hidden" @click="toggleMenu">
             <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
               <rect width="37" height="37" rx="18.5" fill="#FA8C16" />
@@ -31,19 +31,12 @@
 
                 <ul v-if="item.children && item.children.length" class="sub-menu py-2 z-10 hidden group-hover:block lg:bg-[#3b3b3b] lg:absolute lg:top-14 lg:right-0 lg:rounded-md">
                   <li v-for="link in item.children" :key="link.label" class="px-6 py-2 text-nowrap text-left" style="text-wrap: nowrap;">
-                    <NuxtLink :to=link.url :target="link.target" class="text-nowrap transition-all duration-300 hover:text-primary-500">{{ link.label }}</NuxtLink>
+                    <NuxtLink :to="link.url" :target="link.target" class="text-nowrap transition-all duration-300 hover:text-primary-500">{{ link.label }}</NuxtLink>
                   </li>
                 </ul>
               </li>
-              <span class="lg:hidden flex justify-start pt-4">
-                <USelect v-model="lang" :options="langs" class="select w-max uppercase" color="primary" variant="none" />
-              </span>
             </ul>
           </nav>
-        </div>
-        <div class="lg:w-2/12 text-right hidden lg:block cursor-pointer">
-          <USelect v-model="lang" :options="langs" class="select w-max ml-auto uppercase cursor-pointer" color="primary"
-            variant="none" />
         </div>
       </div>
     </div>
@@ -67,6 +60,8 @@ const menus = [
       { label: 'EVM Storage', url: 'https://crust.network/evm', target: '_blank' },
       { label: 'Crust Cloud', url: 'https://crustcloud.io', target: '_blank' },
       { label: 'Crust Files', url: 'https://crustfiles.io', target: '_blank' },
+      { label: 'IPFS Scan', url: 'https://ipfs-scan.io/', target: '_blank' },
+      { label: 'Crust Swap', url: 'https://swap.crust.network/#/swap', target: '_blank' },
     ],
   },
   {
@@ -95,15 +90,24 @@ const menus = [
     target: '_blank',
     children: [],
   },
+  {
+    label: 'Get CRU',
+    link: 'https://swap.crust.network/#/swap',
+    target: '_blank',
+    children: [],
+  },
 ];
-const langs = ['en', 'bn', 'ar'];
-const lang = ref(langs[0]);
-
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+useHead({
+  script: [
+    { src: '/js/twitter-pixel.js', defer: true },
+  ]
+})
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container px-3 featureupon pt-[50px]">
+    <div class="container px-3 featureupon pt-[50px] pb-[20PX]">
         <div class="flex flex-wrap items-center -mx-3">
       <!-- Left Side Navigation -->
             

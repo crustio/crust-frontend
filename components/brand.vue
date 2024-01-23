@@ -21,7 +21,7 @@
   <script setup>
     const imgArray = [
       '/img/brand/IPFS.svg',
-      '/img/brand/polkadot.png',
+      // '/img/brand/polkadot.png',
       '/img/brand/Uniswap.png',
       '/img/brand/Moonbeam.png',
       '/img/brand/Moonriver.png',

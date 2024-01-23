@@ -11,6 +11,7 @@
       <Ipfs />
       <!-- <Products /> -->
       <ProductsTab />
+      <BackedBy />
       <!-- newer -->
       <Contact />
       <Footer />
