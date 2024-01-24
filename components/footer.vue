@@ -81,7 +81,7 @@
             title: 'Media',
             link: [
                 { label: 'Twitter', url: 'https://twitter.com/CrustNetwork', target: '_blank' },
-                { label: 'Discord', url: 'https://discord.com/invite/crustnetwork', target: '_blank' },
+                { label: 'Discord', url: 'https://discord.gg/zJtChDk4yW', target: '_blank' },
                 { label: 'Telegram', url: 'https://t.me/CrustNetwork', target: '_blank' },
                 { label: 'Medium', url: 'https://medium.com/crustnetwork', target: '_blank' },
                 { label: 'Governance', url: 'https://crust.subsquare.io/', target: '_blank' },

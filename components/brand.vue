@@ -20,8 +20,8 @@
   
   <script setup>
     const imgArray = [
-      '/img/brand/IPFS.svg',
-      // '/img/brand/polkadot.png',
+      '/img/brand/IPFS logo.png',
+      '/img/brand/polkadot.png',
       '/img/brand/Uniswap.png',
       '/img/brand/Moonbeam.png',
       '/img/brand/Moonriver.png',
@@ -31,11 +31,11 @@
       '/img/brand/polygon-logo.png',
       '/img/brand/MultiversX.png',
       '/img/brand/NEAR.png',
-      '/img/brand/Chainlink-Logo.png',
+      '/img/brand/Chainlink logo.png',
       '/img/brand/Solana.png',
       '/img/brand/APTOS.png',
       '/img/brand/Arbitrum.png',
-      '/img/brand/Shardeum-Network.png',
+      '/img/brand/Shardeum Network.png',
       '/img/brand/Optimism.png',
       '/img/brand/zkSync.png',
       '/img/brand/OASIS.png',
