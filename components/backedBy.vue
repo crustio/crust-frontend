@@ -7,12 +7,12 @@
       </div>
       <div class="flex flex-wrap -mx-3">
         <div class="w-full px-3">
-          <Vue3Marquee  direction="normal" :duration="50" class="mb-10">
+          <Marquee class="mb-10">
             <img v-for="img in imgArray" :key="img" :src="img"/>
-          </Vue3Marquee>
-          <Vue3Marquee  direction="reverse" :duration="50">
+          </Marquee>
+          <Marquee direction="reverse">
             <img v-for="img in imgArray" :key="img" :src="img"/>
-          </Vue3Marquee>
+          </Marquee>
         </div>
       </div>
     </div>
