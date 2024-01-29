@@ -11,7 +11,7 @@
             <img v-for="img in imgArray" :key="img" :src="img"/>
           </Marquee>
           <Marquee direction="reverse">
-            <img v-for="img in imgArray" :key="img" :src="img"/>
+            <img v-for="img in imgArray" :key="img + 'reverse'" :src="img"/>
           </Marquee>
         </div>
       </div>
