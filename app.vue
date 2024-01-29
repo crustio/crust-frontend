@@ -3,6 +3,7 @@
     <ClientOnly>
       <Header />
       <Banner />
+    </ClientOnly>
       <Featured />
       <FeatureUpon />
       <Brand />
@@ -15,7 +16,6 @@
       <!-- newer -->
       <Contact />
       <Footer />
-    </ClientOnly>
   </div>
 </template>
 
