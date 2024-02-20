@@ -11,6 +11,9 @@
                     <p class="mb-1 text-white text-opacity-60 text-[14px] md:text-[16px]">{{ item.des }}</p>
                 </NuxtLink>
             </div>
+            <div class="text-center w-full py-7 text-[18px]">
+                <NuxtLink to="https://medium.com/crustnetwork/partnership/home" target="_blank" class="transition duration-300 underline decoration-1 hover:opacity-80 ">Crust works with over 150+ projects</NuxtLink>
+            </div>
         </div>
     </div>
 </template>
