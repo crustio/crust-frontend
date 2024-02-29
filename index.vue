@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black text-white h-full">
+  <div class="h-full text-white bg-black">
     <ClientOnly>
       <Header />
       <Banner />
@@ -15,7 +15,9 @@
       <!-- newer -->
       <Contact />
       <Footer />
+      <evm/>
     </ClientOnly>
+
   </div>
 </template>
 

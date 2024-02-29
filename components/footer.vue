@@ -2,24 +2,24 @@
     <footer class="md:pt-32 py-8 md:py-[60px] footer_area px-4 pt-16">
         <div class="container px-3">
             <div class="flex flex-wrap -mx-3 get__in__touch">
-                <div class="md:w-5/12 px-3">
+                <div class="px-3 md:w-5/12">
                     <NuxtLink to="/">
                         <img src="/img/logo.png" alt="" class="w-[138px] mb-6" />
                     </NuxtLink>
                     <p class="text-[14px] md:text-[18px] leading-[170%]  text-white text-opacity-60 pb-8 md:pb-6 pt-3">{{ footerDesc }}</p>
-                    <ul class="flex items-center flex-wrap social__icons ">
+                    <ul class="flex flex-wrap items-center social__icons ">
                         <li v-for="(item,index) in social" :key="index">
                             <NuxtLink :to=item.url target="_blank"><span v-html="item.svg"></span></NuxtLink>
                         </li>
                     </ul>
                 </div>
-                <div class="md:w-7/12 px-3">
+                <div class="px-3 md:w-7/12">
                     <div class="flex flex-wrap">                        
-                        <div class="w-6/12 lg:w-4/12 mt-3 mb-2" v-for="item in footerMenu" :key="item.title">
+                        <div class="w-6/12 mt-3 mb-2 lg:w-4/12" v-for="item in footerMenu" :key="item.title">
                             <h5 class="mb-5 text-xl font-semibold text-white">{{ item.title }}</h5>
                             <ul>
                                 <li v-for="(submenu, index) in item.link" :key="index">
-                                    <NuxtLink :to="submenu.url" :target="submenu.target" class="text-base font-normal text-white text-opacity-70 transition-all duration-500 hover:text-primary-500 mb-4 block">{{submenu.label}}</NuxtLink>
+                                    <NuxtLink :to="submenu.url" :target="submenu.target" class="block mb-4 text-base font-normal text-white transition-all duration-500 text-opacity-70 hover:text-primary-500">{{submenu.label}}</NuxtLink>
                                 </li>
                             </ul>
                         </div>
