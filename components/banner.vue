@@ -31,8 +31,7 @@
                 </div>
             </div>
             <div class="flex flex-wrap -mx-3 justify-center">
-                <div class="lg:w-1/4 md:w-1/3 w-full px-3 mb-10 md:mb-7 text-center" v-for="item in bannerInfo"
-                    :key="item.title">
+                <div class="lg:w-1/4 md:w-1/3 w-full px-3 mb-10 md:mb-7 text-center" v-for="(item, index) in bannerInfo" :key="item.des + '-' + index">
                     <h3 class="text-[24px] md:text-[32px] font-bold leading-tight mb-3 text-white">{{ item.title }} <sub>{{
                         item.sub }}</sub></h3>
                     <p class="mb-0 text-primary-500 uppercase font-medium text-[14px] md:text-[18px]">{{ item.des }}</p>
@@ -77,43 +76,33 @@ export default {
             ]
         }
     },
-    mounted() {
-        const domain = 'https://sd.crustcode.com/api/'
-        const username = "crust"
-        const password = "654321"
-        const token = `${username}:${password}`
-        const encodedToken = btoa(token)
-        useFetch(`${domain}totalStorage`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            this.totalStorage = this.formatData(res);
-        }).catch(err => console.log(err));
-        useFetch(`${domain}totalValidNodes`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            this.totalValidNodes = this.formatData(res);
-        }).catch(err => console.log(err));
-        useFetch(`${domain}orderCount`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            this.orderCount = this.formatData(res);
-        }).catch(err => console.log(err));
-        useFetch(`${domain}filePrice`, { server: false, headers: { 'Authorization': `Basic ${encodedToken}` } }).then(res => {
-            this.filePrice = this.formatData(res);
-        }).catch(err => console.log(err));
+    async mounted() {
+        let totalStorage = await this.getJSON('/totalStorage')
+        let totalValidNodes = await this.getJSON('/totalValidNodes')
+        let orderCount = await this.getJSON('/orderCount')
+        let filePrice = await this.getJSON('/filePrice')
+
+        this.totalStorage = totalStorage.data || 0
+        this.totalValidNodes = totalValidNodes.data || 0
+        this.orderCount = orderCount.data || 0
+        this.filePrice = filePrice.data || 0
     },
     methods: {
-        formatData(data) {
-            let res = data?.data?.value
-            if (res) {
-                if (Object.prototype.toString.call(res) === "[object Object]") {
-                    return res.data
-                } else if (Object.prototype.toString.call(res) === "[object String]") {
-                    try {
-                        let obj = JSON.parse(res)
-                        return obj.data
-                    } catch (error) {
-                        return 0
-                    }
-                } else {
-                    return res
-                }
+        async getJSON(path) {
+            const domain = 'https://sd.crustcode.com/api'
+            const username = "crust"
+            const password = "654321"
+            const token = `${username}:${password}`
+            const encodedToken = btoa(token);
+
+            try {
+                let response = await fetch(domain + path, {
+                    headers: { 'Authorization': `Basic ${encodedToken}` }
+                });
+                return await response.json();
+            } catch (error) {
+                console.log('Request Failed', error);
             }
-            return 0
         }
     },
 };
