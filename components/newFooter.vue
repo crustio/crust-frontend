@@ -74,7 +74,7 @@
                 { label: 'Home', url: '/' },
                 { label: 'Wiki', url: 'https://wiki.crust.network/', target: '_blank' },
                 { label: 'Blog', url: ' https://medium.com/crustnetwork', target: '_blank' },
-                { label: 'Contact', url: 'mailto:hi@crust.network', target: '_blank' },
+                { label: 'Media kit', url: 'https://drive.google.com/drive/folders/1oNTJXmRKQP3Ywj3up2DNLxCshCOBqb43?usp=drive_link', target: '_blank' },
             ],
         },
         {
