@@ -10,7 +10,7 @@
           Scaling the storage of<br />EVM-compatible<br />ecosystem
         </div>
         <div class="btn_group">
-          <div class="btn" @click="jumbTo('evm_storage')">Read the Docs</div>
+          <div class="btn" @click="jumbTo('https://crustipfs.online/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3')">Read the Docs</div>
           <a class="btn" href="https://crustfiles.io/" target="_blank"
             >Upload your files</a
           >
