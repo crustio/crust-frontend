@@ -1,5 +1,5 @@
 <template>
-    <footer class="md:pt-32 py-8 md:py-[60px] px-4 pt-16">
+    <footer class="md:pt-32 py-8 md:py-[60px] px-4 pt-16 bg-black">
         <div class="container px-3">
             <div class="flex flex-wrap -mx-3 get__in__touch">
                 <div class="px-3 md:w-5/12">
