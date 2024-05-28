@@ -93,7 +93,7 @@ const menus = [
     children: [
     { label: 'Wiki', url: 'https://wiki.crust.network', target: '_blank' },
     { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
-    { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/QmXUhqUgZGVJsWmV4TCDePwWtpJvEAx7rvNCjuNKaEUHzk', target: '_blank' },
+    { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
     { label: 'CSM Lightpaper', url: 'https://ipfs.io/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
     { label: 'EVM Storage Lightpaper', url: 'https://ipfs.io/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3?filename=Crust%20EVM%20Storage.pdf', target: '_blank' },
 
