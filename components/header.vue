@@ -71,12 +71,15 @@ const menus = [
     children: [
       { label: 'Crust Network', url: 'https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/explorer', target: '_blank' },
       { label: 'Crust Wallet', url: 'https://wiki.crust.network/docs/en/crustWallet', target: '_blank' },
-      { label: 'Blockchain Explorer', url: ' https://crust.subscan.io', target: '_blank' },
+      { label: 'Crust Mainnet Explorer', url: ' https://crust.subscan.io', target: '_blank' },
       { label: 'EVM Storage', url: '/evm/', target: '_blank' },
       { label: 'Crust Cloud', url: 'https://crustcloud.io', target: '_blank' },
       { label: 'Crust Files', url: 'https://crustfiles.io', target: '_blank' },
       { label: 'IPFS Scan', url: 'https://ipfs-scan.io/', target: '_blank' },
       { label: 'Crust Swap', url: 'https://swap.crust.network/#/swap', target: '_blank' },
+      { label: 'Crust Parachain Explorer', url: 'https://crust-parachain.statescan.io/', target: '_blank' },
+      { label: 'Shadow Explorer', url: 'https://shadow.statescan.io/', target: '_blank' },
+
     ],
   },
   {
