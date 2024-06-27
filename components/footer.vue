@@ -31,6 +31,8 @@
 </template>
 
 <script setup>
+const currentHostname = window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
+
     const social = reactive([
         {
             title: 'tw',
@@ -72,7 +74,7 @@
             title: 'Website',
             link: [
                 { label: 'Home', url: '/' },
-                { label: 'Wiki', url: 'https://wiki.crust.network/', target: '_blank' },
+                { label: 'Wiki', url: `https://wiki.${currentHostname}/`, target: '_blank' },
                 { label: 'Blog', url: ' https://medium.com/crustnetwork', target: '_blank' },
                 { label: 'Media kit', url: 'https://drive.google.com/drive/folders/1oNTJXmRKQP3Ywj3up2DNLxCshCOBqb43?usp=drive_link', target: '_blank' },
             ],

@@ -26,7 +26,7 @@
                 {{ $t(`storage.crustChainApi`) }}
               </div>
             </div>
-            <div class="start-code-left-tab  start-mobile">
+            <div class="start-code-left-tab start-mobile">
               <div
                 @click="activeTab = 1"
                 :class="{
@@ -57,7 +57,7 @@ import { <span style="color:#c0392b">KeyringPair</span> } from &#39;@polkadot/ke
 
 <p><span style="color:#27ae60">&nbsp;// 1. Connect to chain</span><br />
 &nbsp;<span style="color:#c0392b">const </span>api = new <span style="color:#2980b9">ApiPromise</span>({<br />
-&nbsp; &nbsp; &nbsp;provider: new <span style="color:#3498db">WsProvider</span>(&#39;wss://rpc.crust.network&#39;),<br />
+&nbsp; &nbsp; &nbsp;provider: new <span style="color:#3498db">WsProvider</span>(&#39;wss://rpc.crustnetwork.xyz&#39;),<br />
 &nbsp; &nbsp; &nbsp;typesBundle: typesBundleForPolkadot,<br />
 &nbsp;});</p>
 
@@ -175,6 +175,7 @@ export default {
     return {
       activeTab: 1,
       icons: [Dev, storage],
+      currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
     }
   },
   methods:{

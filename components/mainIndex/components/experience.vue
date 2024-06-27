@@ -145,7 +145,7 @@ export default {
           title: "cardTitle1",
           subTitle: "cardSubTitle1",
           button: "cardButton1",
-          url: "https://apps.crust.network/#/storage",
+          url: `https://apps.${window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname}/#/storage`,
         },
         {
           img: require(`../../../assets/img/3-Experience now/crust files.png`),

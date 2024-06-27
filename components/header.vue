@@ -69,8 +69,8 @@ const menus = [
     label: 'Get Started',
     link: '',
     children: [
-      { label: 'Crust Network', url: 'https://apps.crust.network/?rpc=wss%3A%2F%2Frpc.crust.network#/explorer', target: '_blank' },
-      { label: 'Crust Wallet', url: 'https://wiki.crust.network/docs/en/crustWallet', target: '_blank' },
+      { label: 'Crust Network', url: 'https://apps.crustnetwork.xyz/?rpc=wss%3A%2F%2Frpc.crustnetwork.xyz#/explorer', target: '_blank' },
+      { label: 'Crust Wallet', url: 'https://wiki.crustnetwork.xyz/docs/en/crustWallet', target: '_blank' },
       { label: 'Crust Mainnet Explorer', url: ' https://crust.subscan.io', target: '_blank' },
       { label: 'Crust Parachain Explorer', url: 'https://crust-parachain.statescan.io/', target: '_blank' },
       { label: 'Shadow Explorer', url: 'https://shadow.statescan.io/', target: '_blank' },
@@ -78,7 +78,7 @@ const menus = [
       { label: 'Crust Cloud', url: 'https://crustcloud.io', target: '_blank' },
       { label: 'Crust Files', url: 'https://crustfiles.io', target: '_blank' },
       { label: 'IPFS Scan', url: 'https://ipfs-scan.io/', target: '_blank' },
-      { label: 'Crust Swap', url: 'https://swap.crust.network/#/swap', target: '_blank' },
+      { label: 'Crust Swap', url: 'https://swap.crustnetwork.xyz/#/swap', target: '_blank' },
 
 
     ],
@@ -88,14 +88,14 @@ const menus = [
     link: '',
     children: [
       { label: 'Github', url: 'https://github.com/crustio', target: '_blank' },
-      { label: 'Build on Crust', url: 'https://wiki.crust.network/docs/en/build101', target: '_blank' },
+      { label: 'Build on Crust', url: 'https://wiki.crustnetwork.xyz/docs/en/build101', target: '_blank' },
     ],
   },
   {
     label: 'Documents',
     link: '',
     children: [
-    { label: 'Wiki', url: 'https://wiki.crust.network', target: '_blank' },
+    { label: 'Wiki', url: 'https://wiki.crustnetwork.xyz', target: '_blank' },
     { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
     { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
     { label: 'CSM Lightpaper', url: 'https://ipfs.io/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
@@ -111,7 +111,7 @@ const menus = [
   },
   {
     label: 'Get CRU',
-    link: 'https://swap.crust.network/#/swap',
+    link: 'https://swap.crustnetwork.xyz/#/swap',
     target: '_blank',
     children: [],
   },

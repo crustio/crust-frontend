@@ -1,7 +1,7 @@
 <template>
-  <div class="container product__tab pb-14 md:pb-20 md:pt-32 pt-10">
-    <h2 class="mb-14 px-3">Products</h2>
-    <div class="flex flex-wrap items-center -mx-3 px-6">
+  <div class="container pt-10 product__tab pb-14 md:pb-20 md:pt-32">
+    <h2 class="px-3 mb-14">Products</h2>
+    <div class="flex flex-wrap items-center px-6 -mx-3">
       <!-- Left Side Navigation -->
       <div class="md:w-6/12">
         <ul class="flex flex-col space-y-2">
@@ -33,30 +33,30 @@
         <transition name="fade" mode="out-in">
           <div :key="openTab" class="fade">
             <div v-bind:class="{ 'hidden': openTab !== 1, 'block': openTab === 1 }"
-              class="p-4 border-solid border-2 border-white rounded-2xl">
-              <a href="https://apps.crust.network/" target="_blank" rel="noopener noreferrer"
-                class="block rounded-lg overflow-hidden">
+              class="p-4 border-2 border-white border-solid rounded-2xl">
+              <a :href="`https://apps.${currentHostname}/`" target="_blank" rel="noopener noreferrer"
+                class="block overflow-hidden rounded-lg">
                 <img src="/public/img/crust-mainnet.png" alt="">
               </a>
             </div>
             <div v-bind:class="{ 'hidden': openTab !== 2, 'block': openTab === 2 }"
-              class="p-4 border-solid border-2 border-white rounded-2xl">
+              class="p-4 border-2 border-white border-solid rounded-2xl">
               <a href="https://crustfiles.io/" target="_blank" rel="noopener noreferrer"
-                class="block rounded-lg overflow-hidden">
+                class="block overflow-hidden rounded-lg">
                 <img src="/public/img/crust-file.png" alt="">
               </a>
             </div>
             <div v-bind:class="{ 'hidden': openTab !== 3, 'block': openTab === 3 }"
-              class="p-4 border-solid border-2 border-white rounded-2xl">
+              class="p-4 border-2 border-white border-solid rounded-2xl">
               <a href="https://crustcloud.io/" target="_blank" rel="noopener noreferrer"
-                class="block rounded-lg overflow-hidden">
+                class="block overflow-hidden rounded-lg">
                 <img src="/public/img/crust-cloud.png" alt="">
               </a>
             </div>
             <div v-bind:class="{ 'hidden': openTab !== 4, 'block': openTab === 4 }"
-              class="p-4 border-solid border-2 border-white rounded-2xl">
+              class="p-4 border-2 border-white border-solid rounded-2xl">
               <a href="https://ipfs-scan.io/" target="_blank" rel="noopener noreferrer"
-                class="block rounded-lg overflow-hidden">
+                class="block overflow-hidden rounded-lg">
                 <img src="/public/img/ipfs-scan.png" alt="">
               </a>
             </div>
@@ -72,7 +72,9 @@ export default {
   name: "products-tab",
   data() {
     return {
-      openTab: 1
+      openTab: 1,
+      currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
+
     };
   },
   methods: {

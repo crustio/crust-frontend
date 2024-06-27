@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-7 pb-5 md:pb-20 ixeo__area">
+  <div class="container pb-5 pt-7 md:pb-20 ixeo__area">
     <div class="flex flex-wrap">
       <ul
         class="flex mb-0 list-none flex-wrap flex-row w-full ixeo__list_wrapper rounded-[10px] bg-[#0C0C0C] backdrop-filter-[blur(7px)]"
@@ -26,14 +26,14 @@
                     </li>
                   </ul>
                   <a
-                    href="https://wiki.crust.network/"
+                   :href="`https://wiki.${currentHostname}/`"
                     target="_blank"
                     class="bg-[#FA8C16] min-w-[206px] text-white p-3 mt-[24px] md:mt-[60px] rounded-[6px] hover:bg-[#F97316] text-center transition inline-block duration-300 md:ml-[30px] text-[16px] md:text-[20px]"
                   >
                     Start Building
                   </a>
                 </div>
-                <div class="lg:w-6/12 mt-8">
+                <div class="mt-8 lg:w-6/12">
                   <div class="api_code_with_copy_code">
                     <ul class="copycode_header">
                       <p>Api Code</p>
@@ -150,14 +150,14 @@ main().catch(error => {
                     </li>
                   </ul>
                   <a
-                    href="https://wiki.crust.network/"
+                   :href="`https://wiki.${currentHostname}/`"
                     target="_blank"
                     class="bg-[#FA8C16] min-w-[206px] text-white p-3 mt-[24px] md:mt-[60px] rounded-[6px] hover:bg-[#F97316] text-center transition inline-block duration-300 md:ml-[30px] text-[16px] md:text-[20px]"
                   >
                     Start Building
                   </a>
                 </div>
-                <div class="lg:w-6/12 mt-8">
+                <div class="mt-8 lg:w-6/12">
                   <div class="api_code_with_copy_code">
                     <ul className="copycode_header">
                       <p>Api Code</p>
@@ -230,14 +230,14 @@ pub fn place_storage_order(
                     </li>
                   </ul>
                   <a
-                    href="https://wiki.crust.network/"
+                   :href="`https://wiki.${currentHostname}/`"
                     target="_blank"
                     class="bg-[#FA8C16] min-w-[206px] text-white p-3 mt-[24px] md:mt-[60px] rounded-[6px] hover:bg-[#F97316] text-center transition inline-block duration-300 md:ml-[30px] text-[16px] md:text-[20px]"
                   >
                     Start Building
                   </a>
                 </div>
-                <div class="lg:w-6/12 mt-8">
+                <div class="mt-8 lg:w-6/12">
                   <div class="api_code_with_copy_code">
                     <ul class="copycode_header">
                       <p>Api Code</p>
@@ -311,14 +311,14 @@ async function main() {
                     </li>
                   </ul>
                   <a
-                    href="https://wiki.crust.network/"
+                   :href="`https://wiki.${currentHostname}/`"
                     target="_blank"
                     class="bg-[#FA8C16] min-w-[206px] text-white p-3 mt-[24px] md:mt-[60px] rounded-[6px] hover:bg-[#F97316] text-center transition inline-block duration-300 md:ml-[30px] text-[16px] md:text-[20px]"
                   >
                     Start Building
                   </a>
                 </div>
-                <div class="lg:w-6/12 mt-8">
+                <div class="mt-8 lg:w-6/12">
                   <div class="api_code_with_copy_code">
                     <ul className="copycode_header">
                       <p>Api Code</p>
@@ -497,6 +497,7 @@ export default {
   name: 'products-tab',
   data() {
     return {
+      currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname,
       openTab: 1,
       items1: [
         'Native IPFS integrations and toolkits for all web3 and web2 users',

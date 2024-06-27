@@ -46,7 +46,7 @@
             <div class="map-network-item">
               <div
                 class="map-network-item-title"
-                @click="routeTo('https://crust.network/')"
+                @click="routeTo(`https://${currentHostname}/`)"
               >
                 {{ $t(`community.netTitle`) }}
               </div>
@@ -88,6 +88,8 @@ export default {
     return {
       icons: [mapIcon, github],
       active: 0,
+      currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
+
     }
   },
   methods: {

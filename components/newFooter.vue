@@ -67,12 +67,15 @@
     ]);
     const footerDesc = "With Crust data and storage resources can be made ownable like any other on-chain asset. Gain full control over your data";
 
+   const currentHostname = 'crustnetwork.xyz'
+
+
     const footerMenu = reactive([
         {
             title: 'Website',
             link: [
                 { label: 'Home', url: '/' },
-                { label: 'Wiki', url: 'https://wiki.crust.network/', target: '_blank' },
+                { label: 'Wiki', url: `https://wiki.${currentHostname}/`, target: '_blank' },
                 { label: 'Blog', url: ' https://medium.com/crustnetwork', target: '_blank' },
                 { label: 'Media kit', url: 'https://drive.google.com/drive/folders/1oNTJXmRKQP3Ywj3up2DNLxCshCOBqb43?usp=drive_link', target: '_blank' },
             ],
