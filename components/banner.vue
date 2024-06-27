@@ -90,7 +90,7 @@ export default {
     },
     methods: {
         async getJSON(path) { 
-           const currentHostName =  window.location.hostname === 'localhost' || 'crust.network' ? 'crustcode.com' : window.location.hostname
+           const currentHostName =  window.location.hostname === 'localhost' || window.location.hostname === 'crust.network' ? 'crustcode.com' : window.location.hostname
 
             const domain = `https://sd.${currentHostName}/api`
             const username = "crust"
