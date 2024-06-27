@@ -1,29 +1,20 @@
 const currentHostname =
-  window.location.hostname === "localhost"
-    ? ""
-    : window.location.hostname;${currentHostname}
+  window.location.hostname === "localhost" ? "" : window.location.hostname;
 const outerDit = {
   "crust network": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
-  "crust network_zh":
-    `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
+  "crust network_zh": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
   "crust wallet": `https://wiki.${currentHostname}/docs/en/crustWallet`,
   "crust wallet_zh": `https://wiki.${currentHostname}/docs/zh-CN/crustWallet`,
   "blockchain explorer": "https://crust.subscan.io/",
   "blockchain explorer_zh": "https://crust.subscan.io/",
-"token swap": "https://csm.crust.network/#/swap",
+  "token swap": "https://csm.crust.network/#/swap",
   "token swap_zh": "https://csm.crust.network/#/swap",
-  "crust mainnet":
-      `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
-  "crust mainnet_en":
-  `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
-  "crust maxwell":
-    `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Fapi-maxwell.${currentHostname}#/`,
-  "crust maxwellIndex":
-    `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/`,
-  "crust maxwell_zh":
-    `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
-  "crust maxwell_en":
-    `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
+  "crust mainnet": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
+  "crust mainnet_en": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
+  "crust maxwell": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Fapi-maxwell.${currentHostname}#/`,
+  "crust maxwellIndex": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/`,
+  "crust maxwell_zh": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
+  "crust maxwell_en": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`,
   github: "https://github.com/crustio",
   github_zh: "https://github.com/crustio",
   "build on crust": `https://wiki.${currentHostname}/docs/en/build101`,
@@ -42,8 +33,7 @@ const outerDit = {
   telegram: "https://t.me/CrustNetwork",
   discord: "https://discord.gg/Jbw2PAUSCR",
   explorer: `http://explorer.${currentHostname}/`,
-  "crust apps":
-    `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Fapi-maxwell.${currentHostname}#/explorer/`,
+  "crust apps": `https://apps.${currentHostname}/?rpc=wss%3A%2F%2Fapi-maxwell.${currentHostname}#/explorer/`,
   "blockchain explorer": "https://crust.subscan.io/",
   "storage explorer": "https://crust.subscan.io/storage",
   "storage explorer_zh": "https://crust.subscan.io/storage",
@@ -88,8 +78,8 @@ const outerDit = {
     "https://ipfs.io/ipfs/QmPeoZuvhq8G5SQ95KJ35xGVLP3pHtF2hahrtFsjTaZbFk?filename=Analysis of Crust Network Economic Model.pdf",
   analysis_of_economic_model_zh:
     "https://ipfs.io/ipfs/QmTeYZVYucgF94cU9Bfuew6shWiTESYKYjDFntG9xK5Hru?filename=解析Crust Network经济模型.pdf",
-    crust_mainnet: "https://swap.crust.network//#/swap",
-    crust_mainnet_zh: "https://swap.crust.network//#/swap",
+  crust_mainnet: "https://swap.crust.network//#/swap",
+  crust_mainnet_zh: "https://swap.crust.network//#/swap",
 
   Technology_WP:
     "https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t",
