@@ -24,7 +24,6 @@ export default defineNuxtConfig({
   plugins: [
     // '{ src: '~/plugins/prism.js', ssr: false }',
     "./plugins/prism.js",
-    "./plugins/host.js",
   ],
   postcss: {
     plugins: {
