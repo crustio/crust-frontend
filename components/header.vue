@@ -25,7 +25,7 @@
 
           <nav class="main-menu z-[999]" :class="{ 'hide': !isMenuOpen }">
             <ul class="flex flex-wrap items-center justify-start">
-              <li v-for="item in menus" :key="item.label" class="relative py-2 ml-20 group">
+              <li v-for="item in state.menus" :key="item.label" class="relative py-2 ml-20 group">
                 <NuxtLink :to="item.link" :target="item.target"
                   class="block py-2 text-base font-normal text-white capitalize transition-all duration-300 border-b-2 border-transparent text-opacity-60 group-hover:text-primary-500 group-hover:text-opacity-100 group-hover:border-b-2 group-hover:border-orange-500">
                   {{ item.label }}<UIcon v-if="item.children && item.children.length" class="align-middle text-inherit" name="i-heroicons-chevron-down-20-solid"/>
@@ -50,16 +50,18 @@
 <script setup>
 
 import { useRouter } from 'vue-router';
+const isMenuOpen = ref(false);
 
-const router = useRouter();
+import { reactive,onMounted } from 'vue';
 
-const goToAboutPage = () => {
-  console.log('router',router.getRoutes());
-  router.push('/evm')
-};
+const state = reactive({
+  value: '',
+  menus:''
+});
 
-
-const menus = [
+onMounted(() => {
+  state.value =  window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname,
+  state.menus = [
   {
     label: 'Home',
     link: '/',
@@ -69,8 +71,8 @@ const menus = [
     label: 'Get Started',
     link: '',
     children: [
-      { label: 'Crust Network', url: 'https://apps.crustnetwork.xyz/?rpc=wss%3A%2F%2Frpc.crustnetwork.xyz#/explorer', target: '_blank' },
-      { label: 'Crust Wallet', url: 'https://wiki.crustnetwork.xyz/docs/en/crustWallet', target: '_blank' },
+      { label: 'Crust Network', url: `https://apps.${state.value}/?rpc=wss%3A%2F%2Frpc.${state.value}#/explorer`, target: '_blank' },
+      { label: 'Crust Wallet', url: `https://wiki.${state.value}/docs/en/crustWallet`, target: '_blank' },
       { label: 'Crust Mainnet Explorer', url: ' https://crust.subscan.io', target: '_blank' },
       { label: 'Crust Parachain Explorer', url: 'https://crust-parachain.statescan.io/', target: '_blank' },
       { label: 'Shadow Explorer', url: 'https://shadow.statescan.io/', target: '_blank' },
@@ -78,7 +80,7 @@ const menus = [
       { label: 'Crust Cloud', url: 'https://crustcloud.io', target: '_blank' },
       { label: 'Crust Files', url: 'https://crustfiles.io', target: '_blank' },
       { label: 'IPFS Scan', url: 'https://ipfs-scan.io/', target: '_blank' },
-      { label: 'Crust Swap', url: 'https://swap.crustnetwork.xyz/#/swap', target: '_blank' },
+      { label: 'Crust Swap', url: `https://swap.crust.network/#/swap`, target: '_blank' },
 
 
     ],
@@ -88,14 +90,14 @@ const menus = [
     link: '',
     children: [
       { label: 'Github', url: 'https://github.com/crustio', target: '_blank' },
-      { label: 'Build on Crust', url: 'https://wiki.crustnetwork.xyz/docs/en/build101', target: '_blank' },
+      { label: 'Build on Crust', url: `https://wiki.${state.value}/docs/en/build101`, target: '_blank' },
     ],
   },
   {
     label: 'Documents',
     link: '',
     children: [
-    { label: 'Wiki', url: 'https://wiki.crustnetwork.xyz', target: '_blank' },
+    { label: 'Wiki', url: `https://wiki.${state.value}`, target: '_blank' },
     { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
     { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
     { label: 'CSM Lightpaper', url: 'https://ipfs.io/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
@@ -111,12 +113,79 @@ const menus = [
   },
   {
     label: 'Get CRU',
-    link: 'https://swap.crustnetwork.xyz/#/swap',
+    link: 'https://swap.${state.value}/#/swap',
     target: '_blank',
     children: [],
   },
 ];
-const isMenuOpen = ref(false);
+
+
+});
+
+
+console.log('hosthost',state, isMenuOpen.value);
+
+
+
+// const menus = [
+//   {
+//     label: 'Home',
+//     link: '/',
+//     children: [],
+//   },
+//   {
+//     label: 'Get Started',
+//     link: '',
+//     children: [
+//       { label: 'Crust Network', url: `https://apps.${state}/?rpc=wss%3A%2F%2Frpc.${state}#/explorer`, target: '_blank' },
+//       { label: 'Crust Wallet', url: `https://wiki.${state.value}/docs/en/crustWallet`, target: '_blank' },
+//       { label: 'Crust Mainnet Explorer', url: ' https://crust.subscan.io', target: '_blank' },
+//       { label: 'Crust Parachain Explorer', url: 'https://crust-parachain.statescan.io/', target: '_blank' },
+//       { label: 'Shadow Explorer', url: 'https://shadow.statescan.io/', target: '_blank' },
+//       { label: 'EVM Storage', url: '/evm/', target: '_blank' },
+//       { label: 'Crust Cloud', url: 'https://crustcloud.io', target: '_blank' },
+//       { label: 'Crust Files', url: 'https://crustfiles.io', target: '_blank' },
+//       { label: 'IPFS Scan', url: 'https://ipfs-scan.io/', target: '_blank' },
+//       { label: 'Crust Swap', url: `https://swap.${state.value}/#/swap`, target: '_blank' },
+
+
+//     ],
+//   },
+//   {
+//     label: 'Build',
+//     link: '',
+//     children: [
+//       { label: 'Github', url: 'https://github.com/crustio', target: '_blank' },
+//       { label: 'Build on Crust', url: `https://wiki.${state.value}/docs/en/build101`, target: '_blank' },
+//     ],
+//   },
+//   {
+//     label: 'Documents',
+//     link: '',
+//     children: [
+//     { label: 'Wiki', url: `https://wiki.${state.value}`, target: '_blank' },
+//     { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
+//     { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
+//     { label: 'CSM Lightpaper', url: 'https://ipfs.io/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
+//     { label: 'EVM Storage Lightpaper', url: 'https://ipfs.io/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3?filename=Crust%20EVM%20Storage.pdf', target: '_blank' },
+
+//     ],
+//   },
+//   {
+//     label: 'Blog',
+//     link: 'https://medium.com/crustnetwork',
+//     target: '_blank',
+//     children: [],
+//   },
+//   {
+//     label: 'Get CRU',
+//     link: 'https://swap.${state.value}/#/swap',
+//     target: '_blank',
+//     children: [],
+//   },
+// ];
+
+
 
 
 const toggleMenu = () => {

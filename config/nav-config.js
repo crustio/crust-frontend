@@ -1,23 +1,10 @@
-
 const outerDit = {
-  "crust network": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Frpc.${'crustnetwork.xyz'}#/explorer`,
-  "crust network_zh": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Frpc.${'crustnetwork.xyz'}#/explorer`,
-  "crust wallet": `https://wiki.${'crustnetwork.xyz'}/docs/en/crustWallet`,
-  "crust wallet_zh": `https://wiki.${'crustnetwork.xyz'}/docs/zh-CN/crustWallet`,
   "blockchain explorer": "https://crust.subscan.io/",
   "blockchain explorer_zh": "https://crust.subscan.io/",
   "token swap": "https://csm.crust.network/#/swap",
   "token swap_zh": "https://csm.crust.network/#/swap",
-  "crust mainnet": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Frpc.${'crustnetwork.xyz'}#/explorer`,
-  "crust mainnet_en": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Frpc.${'crustnetwork.xyz'}#/explorer`,
-  "crust maxwell": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Fapi-maxwell.${'crustnetwork.xyz'}#/`,
-  "crust maxwellIndex": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Frpc.${'crustnetwork.xyz'}#/`,
-  "crust maxwell_zh": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Frpc.${'crustnetwork.xyz'}#/explorer`,
-  "crust maxwell_en": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Frpc.${'crustnetwork.xyz'}#/explorer`,
   github: "https://github.com/crustio",
   github_zh: "https://github.com/crustio",
-  "build on crust": `https://wiki.${'crustnetwork.xyz'}/docs/en/build101`,
-  "build on crust_zh": `https://wiki.${'crustnetwork.xyz'}/docs/en/build101`,
   "crust grants": "https://github.com/crustio/Crust-Grants-Program",
   "crust grants_zh": "https://github.com/crustio/Crust-Grants-Program",
   "crust bounty": "https://gitcoin.co/crustio",
@@ -26,13 +13,10 @@ const outerDit = {
   "cru token_zh": "https://csm.crust.network/#/swap",
   csmtoken: "https://csm.crust.network/#/cru/info",
 
-  wiki: `https://wiki.${'crustnetwork.xyz'}/zh-CN`,
   twitter: "https://twitter.com/CrustNetwork",
   medium: "https://medium.com/@CrustNetwork",
   telegram: "https://t.me/CrustNetwork",
   discord: "https://discord.gg/Jbw2PAUSCR",
-  explorer: `http://explorer.${'crustnetwork.xyz'}/`,
-  "crust apps": `https://apps.${'crustnetwork.xyz'}/?rpc=wss%3A%2F%2Fapi-maxwell.${'crustnetwork.xyz'}#/explorer/`,
   "blockchain explorer": "https://crust.subscan.io/",
   "storage explorer": "https://crust.subscan.io/storage",
   "storage explorer_zh": "https://crust.subscan.io/storage",
@@ -43,15 +27,10 @@ const outerDit = {
   pdfBucket:
     "https://crust-data.oss-cn-shanghai.aliyuncs.com/crust-home/whitepapers/",
   extractDocs: "https://crust-data.oss-cn-shanghai.aliyuncs.com/external_docs/",
-  download: `https://${'crustnetwork.xyz'}/download/`,
   clouden: "https://github.com/crustio/crust/wiki/Crust-Cloud-Testing-Guide",
   cloud:
     "https://github.com/crustio/crust/wiki/Crust-Cloud-%E6%B5%8B%E8%AF%95%E6%89%8B%E5%86%8C",
   learnMore: "https://github.com/crustio/crust",
-  wiki_en: `https://wiki.${'crustnetwork.xyz'}/en`,
-  wiki_zh: `https://wiki.${'crustnetwork.xyz'}/zh-CN`,
-  wallet_wiki_en: `https://wiki.${'crustnetwork.xyz'}/docs/en/crustWallet`,
-  wallet_wiki_zh: `https://wiki.${'crustnetwork.xyz'}/docs/zh-CN/crustWallet`,
   "check our github_en": "https://github.com/crustio",
   "check our github": "https://github.com/crustio",
   "crust grants": "https://github.com/crustio/Crust-Grants-Program",
@@ -64,15 +43,12 @@ const outerDit = {
   rewards_plan_en:
     "https://crustnetwork.medium.com/crust-updates-kusama-parachain-slot-auction-rewards-2f6b32c682ec",
   rewards_plan_zh: "https://mp.weixin.qq.com/s/xtLCalg9fnvoierQTNFDfQ",
-  "free storage": `https://fs.${'crustnetwork.xyz'}`,
   mediamaterials:
     "https://ipfs.io/ipfs/Qme9uUpunio7heGDnnfsptYWzjLJgvD2hkbLGcvehPz5EK?filename=CrustLogo.zip",
   dotask: "https://www.coinask.io/n/crust",
   mainnet_plan_medium_zh: "https://www.yuque.com/qm003f/thyzgp/rs6o07",
   mainnet_plan_medium_en:
     "https://medium.com/crustnetwork/big-announcement-crust-mainnet-launch-timeline-c2bd2dc0d490",
-  cru_claim_en: `https://wiki.${'crustnetwork.xyz'}/docs/en/claims`,
-  cru_claim_zh: `https://wiki.${'crustnetwork.xyz'}/docs/zh-CN/claims`,
   analysis_of_economic_model_en:
     "https://ipfs.io/ipfs/QmPeoZuvhq8G5SQ95KJ35xGVLP3pHtF2hahrtFsjTaZbFk?filename=Analysis of Crust Network Economic Model.pdf",
   analysis_of_economic_model_zh:
@@ -86,14 +62,8 @@ const outerDit = {
   enjoy_action:
     "https://twitter.com/CrustNetwork/status/1584431211417833472?s=20&t=C662BQ7jphV6l9D7F59b3Q",
 
-  start_button1: `https://wiki.${'crustnetwork.xyz'}/docs/en/build101`,
-  start_button2: "https://github.com/crustio/free-storage#-apply-process",
-  start_button3: `https://wiki.${'crustnetwork.xyz'}/docs/en/build101`,
-  start_button4: `https://wiki.${'crustnetwork.xyz'}/docs/en/buildCrossChainSolution`,
-
   evm_storage:
     "https://ipfs.io/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3?filename=Crust EVM Storage.pdf",
-  evm_storage_dev_wiki: `https://wiki.${'crustnetwork.xyz'}/docs/en/evmBuildOverview`,
   "evm storage": "/evm",
 };
 const outerList = Object.keys(outerDit);

@@ -139,6 +139,7 @@
 </template>
 
 <script>
+import { onMounted } from 'vue';
 import arrow from "@/assets/img/arrow.svg?raw"
 import triangle from "@/assets/img/triangle.svg?raw"
 var timer
@@ -582,6 +583,8 @@ export default {
       ],
     }
   },
+
+
   computed: {
     swiper() {
       return this.$refs.mySwiper.$swiper

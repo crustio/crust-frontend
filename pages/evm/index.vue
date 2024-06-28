@@ -10,7 +10,7 @@
           Scaling the storage of<br />EVM-compatible<br />ecosystem
         </div>
         <div class="btn_group">
-          <div class="btn" @click="jumbTo('https://crustipfs.online/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3')">Read the Docs</div>
+          <div class="btn" @click="jumbTo('read')">Read the Docs</div>
           <a class="btn" href="https://crustfiles.io/" target="_blank"
             >Upload your files</a
           >
@@ -234,7 +234,18 @@ export default {
       this.currentEvm = this.evms[index]
     },
     jumbTo(url){
-      window.open(url, '_blank')
+      const currentHostname = document.location.hostname === "localhost"
+    ? "crust.network"
+    : document.location.hostname;
+        const host = {
+          evm_storage_dev_wiki: `https://wiki.${currentHostname}/docs/en/evmBuildOverview`,
+          read:"https://crustipfs.online/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3"
+
+        }
+        console.log('host[url]',host[url])
+     
+    window.open(host[url],"_blank")
+     
     }
   },
 }

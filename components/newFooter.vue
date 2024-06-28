@@ -15,7 +15,7 @@
                 </div>
                 <div class="px-3 md:w-7/12">
                     <div class="flex flex-wrap">                        
-                        <div class="w-6/12 mt-3 mb-2 lg:w-4/12" v-for="item in footerMenu" :key="item.title">
+                        <div class="w-6/12 mt-3 mb-2 lg:w-4/12" v-for="item in state.footerMenu" :key="item.title">
                             <h5 class="mb-5 text-xl font-semibold text-white">{{ item.title }}</h5>
                             <ul>
                                 <li v-for="(submenu, index) in item.link" :key="index">
@@ -31,6 +31,46 @@
 </template>
 
 <script setup>
+import { reactive,onMounted } from 'vue';
+
+const state = reactive({
+  value: '',
+  footerMenu:''
+});
+
+onMounted(() => {
+    state.footerMenu = reactive([
+        {
+            title: 'Website',
+            link: [
+                { label: 'Home', url: '/' },
+                { label: 'Wiki', url: `https://wiki.${window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname}/`, target: '_blank' },
+                { label: 'Blog', url: ' https://medium.com/crustnetwork', target: '_blank' },
+                { label: 'Media kit', url: 'https://drive.google.com/drive/folders/1oNTJXmRKQP3Ywj3up2DNLxCshCOBqb43?usp=drive_link', target: '_blank' },
+            ],
+        },
+        {
+            title: 'Media',
+            link: [
+                { label: 'Twitter', url: 'https://twitter.com/CrustNetwork', target: '_blank' },
+                { label: 'Discord', url: 'https://discord.gg/zJtChDk4yW', target: '_blank' },
+                { label: 'Telegram', url: 'https://t.me/CrustNetwork', target: '_blank' },
+                { label: 'Medium', url: 'https://medium.com/crustnetwork', target: '_blank' },
+                { label: 'Governance', url: 'https://crust.subsquare.io/', target: '_blank' },
+            ],
+        },
+        {
+            title: 'Link',
+            link: [
+                { label: 'Github', url: 'https://github.com/crustio', target: '_blank' },
+                { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
+                { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
+                { label: 'Token Metrics', url: 'https://medium.com/crustnetwork/crust-token-metrics-economics-84592efc6d1f', target: '_blank' },
+            ],
+        },
+    ]);
+})
+
     const social = reactive([
         {
             title: 'tw',
@@ -67,39 +107,9 @@
     ]);
     const footerDesc = "With Crust data and storage resources can be made ownable like any other on-chain asset. Gain full control over your data";
 
-   const currentHostname = 'crustnetwork.xyz'
 
 
-    const footerMenu = reactive([
-        {
-            title: 'Website',
-            link: [
-                { label: 'Home', url: '/' },
-                { label: 'Wiki', url: `https://wiki.${currentHostname}/`, target: '_blank' },
-                { label: 'Blog', url: ' https://medium.com/crustnetwork', target: '_blank' },
-                { label: 'Media kit', url: 'https://drive.google.com/drive/folders/1oNTJXmRKQP3Ywj3up2DNLxCshCOBqb43?usp=drive_link', target: '_blank' },
-            ],
-        },
-        {
-            title: 'Media',
-            link: [
-                { label: 'Twitter', url: 'https://twitter.com/CrustNetwork', target: '_blank' },
-                { label: 'Discord', url: 'https://discord.gg/zJtChDk4yW', target: '_blank' },
-                { label: 'Telegram', url: 'https://t.me/CrustNetwork', target: '_blank' },
-                { label: 'Medium', url: 'https://medium.com/crustnetwork', target: '_blank' },
-                { label: 'Governance', url: 'https://crust.subsquare.io/', target: '_blank' },
-            ],
-        },
-        {
-            title: 'Link',
-            link: [
-                { label: 'Github', url: 'https://github.com/crustio', target: '_blank' },
-                { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
-                { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
-                { label: 'Token Metrics', url: 'https://medium.com/crustnetwork/crust-token-metrics-economics-84592efc6d1f', target: '_blank' },
-            ],
-        },
-    ]);
+
 </script>
 <style lang="scss" scoped>
 

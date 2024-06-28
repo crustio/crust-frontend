@@ -345,11 +345,8 @@ export default {
       }
     },
     crustMainnet() {
-      if (this.$store.state.locale === "en") {
-        window.open(outerDit.crust_mainnet, "_blank")
-      } else {
-        window.open(outerDit.crust_mainnet_zh, "_blank")
-      }
+        window.open('https://swap.crust.network//#/swap', "_blank")
+     
     },
 
     evmStorage() {
@@ -361,7 +358,11 @@ export default {
     },
 
     crustMacell() {
-      window.open(outerDit["crust maxwellIndex"], "_blank")
+     const currentHostnam e= document.location.hostname === "localhost"
+    ? "crust.network"
+    : document.location.hostname;
+    
+      window.open(`https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/`, "_blank")
     },
     handleClick(name) {
       if (this.$store.state.locale === "en") {
