@@ -113,7 +113,7 @@ onMounted(() => {
   },
   {
     label: 'Get CRU',
-    link: 'https://swap.${state.value}/#/swap',
+    link: 'https://swap.crust.network/#/swap',
     target: '_blank',
     children: [],
   },
