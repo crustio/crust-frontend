@@ -343,9 +343,9 @@ import { ApiPromise, WsProvider } from '@polkadot/api';
 import { typesBundleForPolkadot } from '@crustio/type-definitions';
 import { Keyring } from '@polkadot/keyring';
 
-const crustChainEndpoint = 'wss://rpc.crust.network'; // More endpoints: https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/endpoints/production.ts#L9
+const crustChainEndpoint = 'wss://rpc.{{currentHostname}}'; // More endpoints: https://github.com/crustio/crust-apps/blob/master/packages/apps-config/src/endpoints/production.ts#L9
 const ipfsW3GW = 'https://crustipfs.xyz'; // More web3 authed gateways: https://github.com/crustio/ipfsscan/blob/main/lib/constans.ts#L29
-const crustSeeds = 'xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx'; // Create account(seeds): https://wiki.crust.network/docs/en/crustAccount
+const crustSeeds = 'xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx xxx'; // Create account(seeds): https://wiki.{{currentHostname}}/docs/en/crustAccount
 const api = new ApiPromise({
     provider: new WsProvider(crustChainEndpoint),
     typesBundle: typesBundleForPolkadot,
@@ -383,7 +383,7 @@ async function main() {
     // II. Place storage order
     await placeStorageOrder(rst.cid, rst.size);
     // III. [OPTIONAL] Add prepaid
-    // Learn what's prepard for: https://wiki.crust.network/docs/en/DSM#3-file-order-assurance-settlement-and-discount
+    // Learn what's prepard for: https://wiki.{{currentHostname}}/docs/en/DSM#3-file-order-assurance-settlement-and-discount
     const addedAmount = 100; // in pCRU, 1 pCRU = 10^-12 CRU
     await addPrepaid(rst.cid, addedAmount);
 
