@@ -93,8 +93,8 @@ const currentHostname = window.location.hostname === 'localhost' ? 'crust.networ
             title: 'Link',
             link: [
                 { label: 'Github', url: 'https://github.com/crustio', target: '_blank' },
-                { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
-                { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
+                { label: 'Tech Whitepaper', url: 'https://ipfsgw.live/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
+                { label: 'Economy Whitepaper', url: 'https://ipfsgw.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
                 { label: 'Token Metrics', url: 'https://medium.com/crustnetwork/crust-token-metrics-economics-84592efc6d1f', target: '_blank' },
             ],
         },

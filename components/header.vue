@@ -98,10 +98,10 @@ onMounted(() => {
     link: '',
     children: [
     { label: 'Wiki', url: `https://wiki.${state.value}`, target: '_blank' },
-    { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
-    { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
-    { label: 'CSM Lightpaper', url: 'https://ipfs.io/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
-    { label: 'EVM Storage Lightpaper', url: 'https://ipfs.io/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3?filename=Crust%20EVM%20Storage.pdf', target: '_blank' },
+    { label: 'Tech Whitepaper', url: 'https://ipfsgw.live/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
+    { label: 'Economy Whitepaper', url: 'https://ipfsgw.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
+    { label: 'CSM Lightpaper', url: 'https://ipfsgw.live/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
+    { label: 'EVM Storage Lightpaper', url: 'https://ipfsgw.live/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3?filename=Crust%20EVM%20Storage.pdf', target: '_blank' },
 
     ],
   },
@@ -164,10 +164,10 @@ console.log('hosthost',state, isMenuOpen.value);
 //     link: '',
 //     children: [
 //     { label: 'Wiki', url: `https://wiki.${state.value}`, target: '_blank' },
-//     { label: 'Tech Whitepaper', url: 'https://ipfs.io/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
+//     { label: 'Tech Whitepaper', url: 'https://ipfsgw.live/ipfs/QmP9WqDYhreSuv5KJWzWVKZXJ4hc7y9fUdwC4u23SmqL6t', target: '_blank' },
 //     { label: 'Economy Whitepaper', url: 'https://crustipfs.live/ipfs/Qmdf4CrSjVPpfLEi822FxTPpUbXHoBC1xJP8myqGvKWnFc', target: '_blank' },
-//     { label: 'CSM Lightpaper', url: 'https://ipfs.io/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
-//     { label: 'EVM Storage Lightpaper', url: 'https://ipfs.io/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3?filename=Crust%20EVM%20Storage.pdf', target: '_blank' },
+//     { label: 'CSM Lightpaper', url: 'https://ipfsgw.live/ipfs/QmYVRP7puUhGvQPuThHK2mtQgj2nUAoJYkBgXYxwiaC8Dq?filename=Crust%20Shadow%20lightpaper202105.pdf', target: '_blank' },
+//     { label: 'EVM Storage Lightpaper', url: 'https://ipfsgw.live/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3?filename=Crust%20EVM%20Storage.pdf', target: '_blank' },
 
 //     ],
 //   },
