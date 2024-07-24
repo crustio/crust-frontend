@@ -88,7 +88,7 @@ export default {
     return {
       icons: [mapIcon, github],
       active: 0,
-      currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
+      currentHostname : document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, '')
 
     }
   },

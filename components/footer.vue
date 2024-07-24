@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-const currentHostname = window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
+const currentHostname = document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, '')
 
     const social = reactive([
         {

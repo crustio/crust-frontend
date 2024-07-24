@@ -73,7 +73,7 @@ export default {
   data() {
     return {
       openTab: 1,
-      currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
+      currentHostname : document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, '')
 
     };
   },

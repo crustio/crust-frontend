@@ -177,8 +177,8 @@ export default {
     return {
       activeTab: 1,
       icons: [Dev, storage],
-      currentHostname: window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
-      htmlContent: `(&#39;wss://rpc.${window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname }&#39;)` 
+      currentHostname: document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, ''),
+      htmlContent: `(&#39;wss://rpc.${document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, '')}&#39;)` 
     }
   },
   methods: {

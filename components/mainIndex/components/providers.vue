@@ -14,7 +14,7 @@
             <div
               class="providers-item-info-bitton"
               @click="
-                routeTo(`https://wiki.${window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname}/docs/en/nodeOverview`)
+                routeTo(`https://wiki.${document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, '')}/docs/en/nodeOverview`)
               "
             >
               {{ $t(`providers.button1`) }}
@@ -37,7 +37,7 @@
             <div
               class="providers-item-info-bitton"
               @click="
-                routeTo(`https://wiki.${window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname}/docs/en/ecosystemGrowth`)
+                routeTo(`https://wiki.${document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, '')}/docs/en/ecosystemGrowth`)
               "
             >
               {{ $t(`providers.button2`) }}

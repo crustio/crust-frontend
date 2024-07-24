@@ -60,7 +60,8 @@ const state = reactive({
 });
 
 onMounted(() => {
-  state.value =  window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname,
+  const hostname = document.location.hostname;
+  state.value = hostname === 'localhost' ? 'crust.network' : hostname.replace(/^www\./, '');
   state.menus = [
   {
     label: 'Home',

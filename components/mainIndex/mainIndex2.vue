@@ -358,9 +358,10 @@ export default {
     },
 
     crustMacell() {
-     const currentHostnam e= document.location.hostname === "localhost"
-    ? "crust.network"
-    : document.location.hostname;
+      const hostname = document.location.hostname;
+      const currentHostname = hostname === 'localhost'
+        ? 'crust.network'
+        : hostname.replace(/^www\./, '');
     
       window.open(`https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/`, "_blank")
     },

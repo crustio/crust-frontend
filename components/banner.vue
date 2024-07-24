@@ -50,8 +50,9 @@ export default {
             totalValidNodes: 0,
             orderCount: 0,
             filePrice: 0,
-            currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname
+            currentHostname : document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, '')
         };
+           
     },
     computed: {
         bannerInfo() {
@@ -90,9 +91,7 @@ export default {
     },
     methods: {
         async getJSON(path) { 
-           const currentHostName =  window.location.hostname === 'localhost' || window.location.hostname === 'crust.network' ? 'crustcode.com' : window.location.hostname
-
-            const domain = `https://sd.${currentHostName}/api`
+            const domain ='https://sd.crustcode.com/api'
             const username = "crust"
             const password = "654321"
             const token = `${username}:${password}`

@@ -234,9 +234,12 @@ export default {
       this.currentEvm = this.evms[index]
     },
     jumbTo(url){
-      const currentHostname = document.location.hostname === "localhost"
-    ? "crust.network"
-    : document.location.hostname;
+
+      const hostname = document.location.hostname;
+      const currentHostname = hostname === 'localhost'
+        ? 'crust.network'
+        : hostname.replace(/^www\./, '');
+
         const host = {
           evm_storage_dev_wiki: `https://wiki.${currentHostname}/docs/en/evmBuildOverview`,
           read:"https://crustipfs.online/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3"

@@ -497,7 +497,7 @@ export default {
   name: 'products-tab',
   data() {
     return {
-      currentHostname : window.location.hostname === 'localhost' ? 'crust.network' : window.location.hostname,
+      currentHostname : document.location.hostname === 'localhost'? 'crust.network' :  document.location.hostname.replace(/^www\./, ''),
       openTab: 1,
       items1: [
         'Native IPFS integrations and toolkits for all web3 and web2 users',
