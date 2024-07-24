@@ -242,7 +242,7 @@ export default {
 
         const host = {
           evm_storage_dev_wiki: `https://wiki.${currentHostname}/docs/en/evmBuildOverview`,
-          read:"https://crustipfs.online/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3"
+          read:"https://ipfsgw.live/ipfs/QmSijA1yFvMxY2R6CxRzDNtrLA9h7v8hTxZqTvpgdSPsD3"
 
         }
         console.log('host[url]',host[url])
