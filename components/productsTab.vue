@@ -36,28 +36,28 @@
               class="p-4 border-2 border-white border-solid rounded-2xl">
               <a :href="`https://apps.${currentHostname}/`" target="_blank" rel="noopener noreferrer"
                 class="block overflow-hidden rounded-lg">
-                <img src="/public/img/crust-mainnet.png" alt="">
+                <img src="/img/crust-mainnet.png" alt="">
               </a>
             </div>
             <div v-bind:class="{ 'hidden': openTab !== 2, 'block': openTab === 2 }"
               class="p-4 border-2 border-white border-solid rounded-2xl">
               <a href="https://crustfiles.io/" target="_blank" rel="noopener noreferrer"
                 class="block overflow-hidden rounded-lg">
-                <img src="/public/img/crust-file.png" alt="">
+                <img src="/img/crust-file.png" alt="">
               </a>
             </div>
             <div v-bind:class="{ 'hidden': openTab !== 3, 'block': openTab === 3 }"
               class="p-4 border-2 border-white border-solid rounded-2xl">
               <a href="https://crustcloud.io/" target="_blank" rel="noopener noreferrer"
                 class="block overflow-hidden rounded-lg">
-                <img src="/public/img/crust-cloud.png" alt="">
+                <img src="/img/crust-cloud.png" alt="">
               </a>
             </div>
             <div v-bind:class="{ 'hidden': openTab !== 4, 'block': openTab === 4 }"
               class="p-4 border-2 border-white border-solid rounded-2xl">
               <a href="https://ipfs-scan.io/" target="_blank" rel="noopener noreferrer"
                 class="block overflow-hidden rounded-lg">
-                <img src="/public/img/ipfs-scan.png" alt="">
+                <img src="/img/ipfs-scan.png" alt="">
               </a>
             </div>
           </div>

@@ -166,7 +166,7 @@ h4{
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/public/img/decentralization_signle_box_shap.png');
+    background-image: url('/img/decentralization_signle_box_shap.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
@@ -191,7 +191,7 @@ h4{
     width: 136px;
     height: 12px;
     margin-top: 0px;
-    background-image: url('/public/img/featuredupon_line.svg');
+    background-image: url('/img/featuredupon_line.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top left;
@@ -234,7 +234,7 @@ figure.upor_tab_left_img img {
 }
 
 .nav-item.active .single__item:before {
-    background-image: url('/public/img/featuredupon_activeline.svg');
+    background-image: url('/img/featuredupon_activeline.svg');
 }
 
 
@@ -394,7 +394,7 @@ figure.upor_tab_left_img img {
         opacity: 0;
         transition: all .3s ease-in-out;
         height: 0;
-        background-image: url('/public/img/service_shap.png');
+        background-image: url('/img/service_shap.png');
         z-index: -1;
     }
     &:hover::before{
@@ -436,7 +436,7 @@ figure.upor_tab_left_img img {
         &::before{
             opacity: 0;
             transition: all .3s ease-in-out;
-            background-image: url('/public/img/service_shap.png');
+            background-image: url('/img/service_shap.png');
             z-index: -1;
         }
         &:hover::before{
@@ -596,7 +596,7 @@ figure.upor_tab_left_img img {
         bottom: 0;
         width: 100%;
         height: 130%;
-        background-image: url('/public/img/footer-bg.png');
+        background-image: url('/img/footer-bg.png');
         background-size: cover;
         background-position: bottom left;
         background-repeat: no-repeat;

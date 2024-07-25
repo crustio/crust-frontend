@@ -1,10 +1,10 @@
 <template>
     <div class="hero_area pt-[140px] md:pt-[215px] pb-[60px] md:pb-[125px] bg-cover bg-left-bottom reactive">
         <video autoplay muted playsinline loop class="absolute inset-0 object-cover w-full h-full -z-0">
-            <source src="/public/img/hero-orange-video.mp4" type="video/mp4">
+            <source src="/img/hero-orange-video.mp4" type="video/mp4">
         </video>
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <img src="/public/img/hero-banner-after.png" alt="" class="absolute top-0 left-0 w-full h-auto z-1">
+        <img src="/img/hero-banner-after.png" alt="" class="absolute top-0 left-0 w-full h-auto z-1">
         <div class="container relative z-10 px-3">
             <div class="flex justify-center -mx-3">
                 <div class="w-full sm:w-10/12 px-3 text-center pb-[100px] md:pb-[140px]">
