@@ -82,8 +82,7 @@ onMounted(() => {
       { label: 'Crust Files', url: 'https://crustfiles.io', target: '_blank' },
       { label: 'IPFS Scan', url: 'https://ipfs-scan.io/', target: '_blank' },
       { label: 'Crust Swap', url: `https://swap.crust.network/#/swap`, target: '_blank' },
-
-
+      { label: 'EthDA', url: `https://ethda.io`, target: '_blank' },
     ],
   },
   {

@@ -24,9 +24,9 @@
                             <a :href="`https://apps.${currentHostname}/?rpc=wss%3A%2F%2Frpc.${currentHostname}#/explorer`"
                                 target="_blank" rel="noopener noreferrer">Crust Mainnet</a>
                         </Button>
-                        <Button class="min-w-[170px] lg:min-w-[210px] btn_three">
+                        <!-- <Button class="min-w-[170px] lg:min-w-[210px] btn_three">
                             <a href="https://ethda.io/" target="_blank" rel="noopener noreferrer">EthDA</a>
-                        </Button>
+                        </Button> -->
                     </div>
                 </div>
             </div>
