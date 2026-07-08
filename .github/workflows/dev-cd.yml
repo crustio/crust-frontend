@@ -1,9 +1,9 @@
 name: dev-cd
 
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   # manual trigger
   workflow_dispatch:
 
