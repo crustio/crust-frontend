@@ -14,6 +14,9 @@ export default defineNuxtConfig({
   },
 
   modules: ["@nuxt/ui", "@nuxtjs/i18n", "nuxt-vite-legacy"],
+  tailwindcss: {
+    configPath: "./tailwind.config.js",
+  },
   legacy: {
     targets: "defaults, safari >= 12, ios >= 12",
     modernPolyfills: true
