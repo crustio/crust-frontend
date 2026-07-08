@@ -1,0 +1,13 @@
+overrides:
+  vue-i18n: 9.13.1
+  '@intlify/shared': 9.13.1
+  '@intlify/core': 9.13.1
+  '@intlify/core-base': 9.13.1
+  '@intlify/message-compiler': 9.13.1
+
+allowBuilds:
+  '@parcel/watcher': true
+  bootstrap-vue: true
+  core-js: true
+  esbuild: true
+  vue-demi: true

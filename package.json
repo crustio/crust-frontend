@@ -2,6 +2,7 @@
     "name": "nuxt-app",
     "private": true,
     "type": "module",
+    "packageManager": "pnpm@11.7.0",
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
@@ -10,22 +11,27 @@
         "postinstall": "nuxt prepare"
     },
     "devDependencies": {
-        "@nuxt/devtools": "latest",
-        "@nuxtjs/i18n": "^8.0.0",
-        "@vitejs/plugin-legacy": "^5.4.1",
-        "nuxt-vite-legacy": "^1.2.0",
-        "autoprefixer": "^10.4.16",
-        "nuxt": "^3.8.2",
-        "postcss": "^8.4.32",
-        "tailwindcss": "^3.3.6",
-        "vue": "^3.3.10",
-        "vue-router": "^4.2.5"
+        "@intlify/core": "9.13.1",
+        "@intlify/core-base": "9.13.1",
+        "@intlify/message-compiler": "9.13.1",
+        "@intlify/shared": "9.13.1",
+        "@nuxt/devtools": "1.0.5",
+        "@nuxtjs/i18n": "8.3.1",
+        "@vitejs/plugin-legacy": "5.4.1",
+        "autoprefixer": "10.4.16",
+        "nuxt": "3.8.2",
+        "nuxt-vite-legacy": "1.2.0",
+        "postcss": "8.4.32",
+        "tailwindcss": "3.3.6",
+        "vue": "3.3.11",
+        "vue-i18n": "9.13.1",
+        "vue-router": "4.2.5"
     },
     "dependencies": {
-        "@nuxt/ui": "^2.11.0",
-        "bootstrap-vue": "^2.23.1",
-        "dracula-prism": "^2.1.13",
-        "prismjs": "^1.29.0",
-        "sass": "^1.69.5"
+        "@nuxt/ui": "2.11.0",
+        "bootstrap-vue": "2.23.1",
+        "dracula-prism": "2.1.13",
+        "prismjs": "1.29.0",
+        "sass": "1.69.5"
     }
 }
